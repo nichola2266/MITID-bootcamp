@@ -1,6 +1,8 @@
 # MITID-bootcamp
 Everything you need for MITID bootcamp!
 
+[Johnny five → J5.js](#johnny-five)
+
 
 ## johnny five
 
@@ -61,8 +63,12 @@ https://johnny-five.io/api/led/
 
 ### johnny five documentation for (almost) each components from your kit
 
+OUTPUTS
 - [Led↗](https://johnny-five.io/api/led/)
 - [RGB led↗](https://johnny-five.io/api/led.rgb/)
+- [Piezo (buzzer)↗](https://johnny-five.io/api/piezo/)
+- [Servo↗](https://johnny-five.io/api/servo/)
+- [Motor↗](https://johnny-five.io/api/motor/)
 - [LCD screen↗](https://johnny-five.io/api/lcd/)
 ```javascript 
     // LCD controller
@@ -70,11 +76,9 @@ https://johnny-five.io/api/led/
         controller: "PCF8574T",
     });  
 ```
-- [Piezo (buzzer)↗](https://johnny-five.io/api/piezo/)
-- [Sensor (light sensor for instance)↗](https://johnny-five.io/api/sensor/)
-- [Servo↗](https://johnny-five.io/api/servo/)
-- [Motor↗](https://johnny-five.io/api/motor/)
+INPUTS
 - [Button↗](https://johnny-five.io/api/button/)
+- [Sensor (light sensor and potentiometer for instance)↗](https://johnny-five.io/api/sensor/)
 
 Components available in the makers'lab
 - [Joystick↗](https://johnny-five.io/api/joystick/)
