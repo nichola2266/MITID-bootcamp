@@ -1,10 +1,10 @@
 # MITID-bootcamp
 Everything you need for MITID bootcamp!
 
-[Johnny five → J5.js](#johnny-five)
-[   - Firmata](#firmata)
-[   - P5.js](#p5js)
-[   - components documentation](#johnny-five-documentation-for-almost-each-components-from-your-kit)
+1-[Johnny five → J5.js](#johnny-five)
+⋅⋅⋅⋅1.[Firmata](#firmata)
+⋅⋅⋅⋅2.[P5.js](#p5js)
+⋅⋅⋅⋅3.[Components documentation](#johnny-five-documentation-for-almost-each-components-from-your-kit)
 
 
 
