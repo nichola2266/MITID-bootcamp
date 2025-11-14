@@ -6,11 +6,15 @@ let bodyPose;
 //a variable to store the results
 let poses = [];
 
+let hornsImg;
+let hornOffsetY = 150;
+let hornScale = 1.3;
 
 
 function preload() {
     // Load ressources before setup
-    bodyPose = ml5.bodyPose(); 
+    bodyPose = ml5.bodyPose();
+    hornsImg = loadImage('assets/deerhorns.png');
 }
 
 
@@ -40,14 +44,27 @@ function draw() {
         // target nose position
         let nose= poses[0].nose;
         console.log(nose);
+
         // draw a circle on the nose
-        fill(219, 42, 77);
+        fill(255, 0, 0);
         circle(nose.x,nose.y, 35);
 
+        
+        // deer horns calcualte head center for horns
+        let headX = (leftEye.x + rightEye.x) / 2;
+        let headY = (leftEye.y + rightEye.y) / 2;
+
+        // estimte horn size based on face width
+        let hornWidth = distance * 3 * hornScale;
+   
+
+        //Load deer horns 
+        image( hornsImg, headX - 150, headY - 275, 250 , 250);
     }
 }
 
 
 function mousePressed(){
     console.log(poses);
+   
 }
